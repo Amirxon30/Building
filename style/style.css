@@ -1,0 +1,533 @@
+@font-face{
+    font-family: Rubik-regular;
+    src: url(../fonts/Rubik-Regular.ttf);
+}
+@font-face{
+    font-family: Rubik-bold;
+    src: url(../fonts/Rubik-Bold.ttf);
+}
+@font-face{
+    font-family: Rubik-medium;
+    src: url(../fonts/Rubik-Medium.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    font-family: Rubik-regular;
+}
+.navbar{
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    padding: 45px 0px;
+    background-color: white;
+}
+ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin-left: 324px;
+}
+ul a{
+    text-decoration: none;
+    color:#02012B;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.logo span{
+    margin-top: 10px;
+}
+.btn{
+    cursor: pointer;
+}
+.btn a{
+    background-color:#19BCE4;
+    padding: 11px 25px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    color:#FFFFFF;
+    ;
+}
+.btn a:hover{
+    background-color: #14a6ca;
+}
+ul li:hover{
+    font-weight: 600;
+}
+.btn:hover{
+    background-color: #21abce;
+}
+.overlay{
+    background-image: url(../media/bg.webp);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 70vh;
+}
+.home {
+    height: 70vh;
+    color:#FFFFFF;
+    background-color: rgba(0, 0, 0, 0.432);
+}
+.home h1,.home p{
+    text-align: center;
+}
+.home h1{
+    font-family: Rubik-bold;
+    font-size: 64px;
+    padding-top: 185px ;
+}
+.home p{
+    margin: 24px 409px 97px 409px;
+    font-size: 20px;
+}
+.search{
+    margin: auto;
+    width: 1170px;
+    height: 118px;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    background-color: white;
+    color: #02012B;
+    padding: 24px;
+}
+.search select{
+    font-size: 14px;
+    border: none;
+    color: #555555;
+}
+.search select:hover{
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(240, 240, 240);
+}
+.search div{
+    border: 2px solid #19bbe44f;
+    width: 258px;
+    height: 70px;
+    white-space: nowrap;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+.search div h4{
+    font-size: 20px;
+    padding: 5px 2px;
+    color: #222222;
+}
+#srch_btn{
+    width: 258px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #19BCE4 ;
+    padding: 0px;
+    font-size: 23px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffff;
+}
+#srch_btn:hover{
+    background-color: #14a6ca;
+}
+#about{
+    width: 100%;
+    height: 800px;
+    padding-top: 120px;
+    padding-left: 144px;
+    display: flex;
+    gap: 80px;
+}
+.about_img_holder{
+    display: flex;
+}
+.about_img{
+    position: relative;
+}
+.about_img2{
+    position: absolute;
+    z-index: 5;
+    top: 446px;
+    left: 318px;
+}
+.about_logo{
+    display: flex;
+    gap: 99px;
+}
+.about_title1{
+    font-size: 20px;
+    color: #02012B;
+}
+.about_title2{
+    font-family: Rubik-bold;
+    font-size: 48px;
+    padding-top: 10px;
+    padding-bottom: 24px;
+    color: #222222;
+}
+.about_desc{
+    font-size: 20px;
+    padding-bottom: 40px;
+    color: #555555;
+}
+.about_logo h3{
+    font-size: 24px;
+    padding-top: 24px;
+    color: #222222;
+}
+.about_logo p{
+    font-size: 14px;
+    padding-top: 16px;
+    color: #555555;
+}
+.about_btn{
+    margin-top: 40px;
+}
+.about_btn a{
+    width: 169px;
+    height: 56px;
+    background-color:#19BCE4;
+    text-decoration: none;
+    color: #ffff;
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about_btn a:hover{
+    background-color: #14a6ca;
+}
+#look_for{
+    width: 100%;
+    height: 800px;
+    background-color: #F8FDFE;
+}
+.look_for_text{
+    padding: 75px 0px 0px 144px;
+    font-size: 48px;
+    font-family: Rubik-bold;
+    color:#222222;
+}
+.look_for_holder{
+    display: flex;
+    margin-left: 144px;
+    gap: 51px;
+    padding-top: 68px;
+}
+.family_house,.apartment,.studio,.villa{
+    display: flex;
+    gap: 29px;
+    align-items: center;
+    width: 541px;
+    height: 118px;
+    border: 0.5px solid #19bbe427;
+    padding: 24px;
+}
+.apartment,.studio,.villa{
+    margin-top: 16px;
+}
+.building_type h4{
+    font-size: 20px;
+    font-family: Rubik-medium;
+    color: #222222;
+}
+.building_type p{
+    padding-top: 6px;
+    color:#555555;
+}
+.building_type a{
+    text-decoration: none;
+}
+.family_house:hover{
+    background-color: #f1f1f1;
+}
+.apartment:hover{
+    background-color: #f1f1f1;
+}
+.studio:hover{
+    background-color: #f1f1f1;
+}
+.villa:hover{
+    background-color: #f1f1f1;
+}
+#places{
+    width: 100%;
+    height: 924px;
+    padding: 0px 135px;
+    text-align: center;
+}
+.places_title{
+    font-family: Rubik-bold;
+    font-size: 48px;
+    padding-top: 120px;
+    padding-bottom: 16px;
+}
+.places_desc{
+    font-family: Rubik-regular;
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+.bangladesh{
+    width: 370px;
+    height: 540px;
+}
+
+.places_img{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.japan, .malaysia, .london, .india{
+    width: 370px;
+    height: 255px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+.bangladesh{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.bangladesh .desc{
+    position: absolute;
+    top: 338px;
+}
+.japan{
+    position: relative;
+    background-image: url(../media/japan.png);
+    display: flex;
+    justify-content: center;
+}
+.japan .desc{
+    position: absolute;
+    top: 146px;
+}
+.malaysia{
+    position: relative;
+    background-image: url(../media/malaysia.png);
+    background-size: 103%;
+    display: flex;
+    justify-content: center;
+}
+.malaysia .desc{
+    position: absolute;
+    top: 146px;
+}
+.london{
+    position: relative;
+    background-image: url(../media/london.png);
+    display: flex;
+    justify-content: center;
+}
+.london .desc{
+    position: absolute;
+    top: 146px;
+}
+.india{
+    position: relative;
+    background-image: url(../media/india.png);
+    display: flex;
+    justify-content: center;
+}
+.india .desc{
+    position: absolute;
+    top: 146px;
+}
+.places_img .desc{
+    position:absolute;
+    text-align: center;
+    padding: 12px 31px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(20px);
+}
+.bangladesh .desc, .japan .desc, .malaysia .desc, .london .desc, .india .desc{
+    padding: 12px 37px;
+}
+.bangladesh .desc p, .japan .desc p, .malaysia .desc p, .london .desc p, .india .desc p{
+    font-size: 20px;
+    color:#DDDDDD;
+}
+.bangladesh .desc h1, .japan .desc h1, .malaysia .desc h1, .london .desc h1, .india .desc h1{
+    font-family: Rubik-regular;
+    font-size: 24px;
+    color: #FFFFFF;
+    padding-bottom: 8px;
+}
+.choise{
+    height: 680px;
+}
+.choise-holder{
+    height: 550px;
+    display: flex;
+    gap: 100px;
+    background-color:#F8FDFE;
+    padding-left: 135px;
+}
+.choise_left_title{
+    padding-top: 93px;
+    font-family: Rubik-bold;
+    font-size: 48px;
+}
+.choise_left_desc{
+    font-family: Rubik-regular;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+.choise-holder a{
+    font-family: Rubik-regular;
+    font-size: 18px;
+    padding: 18px 32px;
+    background-color: #19BCE4;
+    text-decoration: none;
+    color:#FFFFFF;
+    border-radius: 6px;
+}
+.choise-holder a span{
+    font-size: 22px;
+    margin-left: 10px;
+}
+.review{
+    height: 720px;
+    background-color: #FFF8F7;
+    text-align: center;
+    padding-top: 95px;
+}
+.review_title{
+    font-family: Rubik-bold;
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+.review_desc{
+    font-family: Rubik-regular;
+    font-size: 20px;
+    margin-bottom: 135px;
+}
+.review_clients{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.williamson, .reja, .sam{
+    width: 370px;
+    height: 280px;
+    background-color: #ffff;
+}
+.williamson_img, .reja_img, .sam_img{
+    margin-top: -75px;
+    padding-bottom: 16px;
+}
+.williamson_name, .reja_name, .sam_name{
+    padding-bottom: 8px;
+    font-family: Rubik-medium;
+    font-size: 24px;
+}
+.williamson_rate, .reja_rate, .sam_rate{
+    padding-bottom: 16px;
+}
+.williamson_comment, .reja_comment, .sam_comment{
+    font-family: Rubik-regular;
+    font-size: 14px;
+}
+.footer{
+    height: 785px;
+    /* padding: 120px 144px; */
+}
+.footer_sub{
+    width: 1152px;
+    height: 251px;
+    margin: 120px auto;
+    color: #ffff;
+    background-color: #19BCE4;
+    text-align: center;
+    border-radius: 24px;
+}
+.sub_title{
+    font-family: Rubik-bold;
+    font-size: 40px;
+    color: #ffff;
+    padding: 48px 260px 0px 260px;
+}
+.input_form{
+    width: 720px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 216px;
+    border: none;
+    border-radius: 6px;
+    background-color: #F8FDFE;
+}
+.footer_sub input{
+    width: 580px;
+    height: 64px;
+    padding-left: 24px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    font-family: Rubik-regular;
+}
+.footer_sub .input_form a{
+    padding: 14px 23px;
+    font-family: Rubik-regular;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 6px;
+    color: #FFFFFF;
+    background-color:#19BCE4;
+}
+.footer_navbar{
+    display: flex;
+    justify-content: center;
+    gap: 44px;
+}
+.footer_logo .logo span{
+    font-size: 18px;   
+}
+.footer_logo .logo{
+    margin-bottom: 26px;
+}
+.footer_logo p{
+    font-family: Rubik-regular;
+    font-size: 18px;
+    color: #555555;
+    margin-bottom: 38px;
+}
+.footer_links a:first-child{
+    margin-left: 10px;
+}
+.footer_links a{
+    margin-right: 20px;
+}
+.home_title, .servies_title, .about_title, #contact_title{
+    font-family: Rubik-medium;
+    font-size: 24px;
+    color: #222222;
+    margin-bottom: 24px;
+}
+.footer_navbar li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.footer_navbar a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #555555;
+}
